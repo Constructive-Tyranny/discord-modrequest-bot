@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "discord-reply": "^0.1.2",
+    "discord.js": "^12.5.3"
+  },
+  "name": "discord-modrequest-bot",
+  "description": "A bot to ping moderators on modrequest",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Constructive-Tyranny/discord-modrequest-bot.git"
+  },
+  "author": "Bas Imth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Constructive-Tyranny/modrequest-bot/issues"
+  },
+  "homepage": "https://github.com/Constructive-Tyranny/discord-modrequest-bot#readme",
+  "keywords": []
+}
