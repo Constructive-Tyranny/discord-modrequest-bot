@@ -1,0 +1,4 @@
+version: "3.7"
+services:
+  discord-modrequest-bot:
+    build: .
