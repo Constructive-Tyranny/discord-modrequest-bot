@@ -29,11 +29,14 @@ client.on("ready", () => {
 // Check if the autor is a bot, if so, continue.
 // If the message has either '!modrequest <space>' or '!requestmod <space>'.. or '!mod <space>' (these are the three things Jupiter responds to), we ping the roles.
 client.on("message", async (message) => {
-  if (
-    message.author.bot == true &&
-    message.content.includes("!modrequest " || "!requestmod " || "!mod ")
-  ) {
-    message.lineReplyNoMention(roles); // Line (Inline) Reply without mention.
+  if (message.author.bot == true) {
+    if (message.content.includes("!modrequest ")) {
+      message.lineReplyNoMention(roles);
+    } else if (message.content.includes("!requestmod ")) {
+      message.lineReplyNoMention(roles);
+    } else if (message.content.includes("!mod ")) {
+      message.lineReplyNoMention(roles);
+    }
   }
 });
 
